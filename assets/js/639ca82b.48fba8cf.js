@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[4601],{5855:(e,n,s)=>{s.r(n),s.d(n,{default:()=>i});s(6540);var t=s(1410),c=s(797),a=s(4848);function i(){const{siteConfig:e}=(0,c.A)();return(0,a.jsxs)(t.A,{children:[(0,a.jsx)("h1",{children:"My React page"}),(0,a.jsx)("p",{children:"This is a React page"})]})}}}]);
