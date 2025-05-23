@@ -9,9 +9,9 @@
 
 ## Documents présent : 
 
-
-## Objectif du document :
+1. SFD
+2. APIS
 
 ## Présentation du produit :
 
-## Contexte et enjeux :
+Suivre la consommation alimentaire d'un utilisateur, lui permettre de créer des repas, les assigner à des jours de la semaine, et analyser sa nutrition ainsi que son évolution de poids via un tableau de bord.

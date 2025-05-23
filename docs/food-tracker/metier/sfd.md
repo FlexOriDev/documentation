@@ -1,10 +1,9 @@
 # Spécifications Fonctionnelles Détaillées (SFD)
 
-## Projet : [Nom du projet]
+## Projet : FoodTracker
 **Version :** 1.0  
-**Auteur(s) :** [Nom(s)]  
-**Date :** [JJ/MM/AAAA]  
-**Validé par :** [Responsable / Client]
+**Auteur(s) :** Louis PERON  
+**Date :** 23/05/2025   
 
 ---
 
@@ -18,6 +17,16 @@
 6. [Contraintes](#6-contraintes)
 7. [Glossaire](#7-glossaire)
 8. [Annexes](#8-annexes)
+
+---
+
+## Features
+
+1. [Création de repas](#31-page-création-de-repas)
+2. [Planning de repas](#32-page-planning-de-repas)
+3. [Dashboard](#33-page-dashboard)
+4. [Profil Utilisateur](#34-page-profil-utilisateur)
+5. [Authentification](#35-page-authentification)
 
 ---
 
@@ -56,19 +65,17 @@
 
 ## 3. Fonctionnalités détaillées
 
-### 3.1 [Nom de la fonctionnalité]
+### 3.1 Page Création de repas
 
 - **Objectif :**  
-  [But de la fonctionnalité]
-
-- **Utilisateurs concernés :**  
-  [Ex : administrateur, client, etc.]
+  
+  1. Consulter une banque d’aliments 
+  2. Créer/modifier un aliment (nom, macros, portion)
+  3. Composer des repas à partir d’aliments
+  4. Sauvegarder des repas réutilisables
 
 - **Entrées :**  
-  | Champ        | Type    | Obligatoire | Description                |
-  |--------------|---------|-------------|----------------------------|
-  | email        | String  | Oui         | Adresse email de l'utilisateur |
-  | mot_de_passe | String  | Oui         | Mot de passe utilisateur   |
+  
 
 - **Traitements :**
     - Vérification des identifiants
@@ -94,6 +101,171 @@
 - **Diagrammes (facultatif) :**
     - Cas d’utilisation
     - Séquence
+
+---
+
+### 3.2 Page Planning de repas 
+
+- **Objectif :**
+
+  1. Calendrier hebdomadaire
+  2. Assignation de repas à un jour / moment (petit-déjeuner, déjeuner, dîner)
+  3. Modification a posteriori : portion, repas remplacé
+
+- **Entrées :**
+
+
+- **Traitements :**
+  - Vérification des identifiants
+  - Génération de session
+
+- **Sorties :**
+  - Redirection vers tableau de bord
+  - Message d’erreur en cas d’échec
+
+- **Pré-conditions :**
+  - L'utilisateur doit être enregistré
+
+- **Post-conditions :**
+  - Session active
+
+- **Exceptions :**
+  - Erreur de mot de passe
+  - Utilisateur non trouvé
+
+- **Maquettes d’écran :**  
+  ![Maquette](/img/logo.svg)
+
+- **Diagrammes (facultatif) :**
+  - Cas d’utilisation
+  - Séquence
+
+---
+
+### 3.3 Page Dashboard
+
+- **Objectif :**
+
+  - Vue sur :
+  - La semaine (repas consommés)
+  - Graphes de macros :
+    - Protides
+    - Glucides
+    - Lipides
+    - Calories
+  - Poids (courbe dans le temps)
+  - Objectif vs réel
+  - Vue mois / année (filtrable)
+
+- **Entrées :**
+
+
+- **Traitements :**
+  - Vérification des identifiants
+  - Génération de session
+
+- **Sorties :**
+  - Redirection vers tableau de bord
+  - Message d’erreur en cas d’échec
+
+- **Pré-conditions :**
+  - L'utilisateur doit être enregistré
+
+- **Post-conditions :**
+  - Session active
+
+- **Exceptions :**
+  - Erreur de mot de passe
+  - Utilisateur non trouvé
+
+- **Maquettes d’écran :**  
+  ![Maquette](/img/logo.svg)
+
+- **Diagrammes (facultatif) :**
+  - Cas d’utilisation
+  - Séquence
+
+---
+
+### 3.4 Page Profil utilisateur
+
+- **Objectif :**
+
+  - Nom, email, sexe, âge, poids, taille, niveau activité
+ 
+  - Objectif nutritionnel (maintien, perte, prise)
+ 
+  - Objectifs macros personnalisés
+ 
+  - Historique de poids
+
+- **Entrées :**
+
+
+- **Traitements :**
+  - Vérification des identifiants
+  - Génération de session
+
+- **Sorties :**
+  - Redirection vers tableau de bord
+  - Message d’erreur en cas d’échec
+
+- **Pré-conditions :**
+  - L'utilisateur doit être enregistré
+
+- **Post-conditions :**
+  - Session active
+
+- **Exceptions :**
+  - Erreur de mot de passe
+  - Utilisateur non trouvé
+
+- **Maquettes d’écran :**  
+  ![Maquette](/img/logo.svg)
+
+- **Diagrammes (facultatif) :**
+  - Cas d’utilisation
+  - Séquence
+
+---
+
+### 3.5 Page Authentification
+
+- **Objectif :**
+
+  - Login, inscription
+
+  - Reset de mot de passe
+
+  - Sécurité token / sessions
+
+- **Entrées :**
+
+
+- **Traitements :**
+  - Vérification des identifiants
+  - Génération de session
+
+- **Sorties :**
+  - Redirection vers tableau de bord
+  - Message d’erreur en cas d’échec
+
+- **Pré-conditions :**
+  - L'utilisateur doit être enregistré
+
+- **Post-conditions :**
+  - Session active
+
+- **Exceptions :**
+  - Erreur de mot de passe
+  - Utilisateur non trouvé
+
+- **Maquettes d’écran :**  
+  ![Maquette](/img/logo.svg)
+
+- **Diagrammes (facultatif) :**
+  - Cas d’utilisation
+  - Séquence
 
 ---
 
