@@ -33,33 +33,35 @@
 ## 1. Introduction
 
 - **Contexte :**  
-  [Décrire brièvement le contexte du projet]
+  
+  Suivi de la nutrition + macro tracking des nutriments sur une plage donnée.
 
 - **Objectifs du document :**  
-  [Ce que couvre le document, à qui il s'adresse]
+  
+  Décrire le produit qui s'adresse à différents profils de personnes :
+Sportifs, personnes voulant faire un régime ...
 
-- **Portée fonctionnelle :**  
-  [Modules concernés, exclusions éventuelles]
+- **Portée fonctionnelle :**
 
-- **Références :**
-    - Cahier des charges : [Lien/nom]
-    - Documentation technique : [Lien/nom]
+  Toutes les features / écrans disponibles dans notre application.
 
 ---
 
 ## 2. Description générale du système
 
 - **Vue d’ensemble fonctionnelle :**  
-  [Présentation synthétique du système]
+  
+  La partie WEB / Mobile echange différents flux selon la ressource demandée avec les APIs en fonction des features.
 
-- **Architecture fonctionnelle :**  
-  ![Diagramme](/img/logo.svg)
+
+- **Architecture fonctionnelle :** 
+
+  ![Flux Application](/img/foodTracker/flux_application.JPG)
 
 - **Environnements concernés :**
     - Web
-    - Mobile
+    - Mobile (à voir)
     - API
-    - Autres : [...]
 
 ---
 
@@ -74,33 +76,21 @@
   3. Composer des repas à partir d’aliments
   4. Sauvegarder des repas réutilisables
 
-- **Entrées :**  
-  
-
-- **Traitements :**
-    - Vérification des identifiants
-    - Génération de session
-
-- **Sorties :**
-    - Redirection vers tableau de bord
-    - Message d’erreur en cas d’échec
-
 - **Pré-conditions :**
     - L'utilisateur doit être enregistré
-
-- **Post-conditions :**
-    - Session active
-
-- **Exceptions :**
-    - Erreur de mot de passe
-    - Utilisateur non trouvé
+- **Tests d'acceptance :**
+- Je peux :
+  - choisir si je veux ajouter un repas ou un aliment.
+  - ajouter des aliments dans mon assiette
+  - changer le nom de mon repas
+  - enregistrer mon repas
+  - ajouter un aliment
+  - changer les valeurs nutritionnelles d'un aliment
+  - changer le nom de mon aliment
+  - utiliser mon aliment dans le mode Repas et l'ajouter dans mon assiette
 
 - **Maquettes d’écran :**  
-  ![Maquette](/img/logo.svg)
-
-- **Diagrammes (facultatif) :**
-    - Cas d’utilisation
-    - Séquence
+  ![Maquette](/img/foodTracker/ecran/crafter.JPG)
 
 ---
 
