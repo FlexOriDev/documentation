@@ -87,6 +87,12 @@ const config: Config = {
           label: 'FoodTracker',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'figma',
+          position: 'left',
+          label: 'Figma',
+        },
+        {
           href: 'https://github.com/FlexOriDev/documentation',
           label: 'GitHub',
           position: 'right',
