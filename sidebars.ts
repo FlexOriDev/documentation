@@ -69,6 +69,9 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
+  figma: [
+    'figma/intro',
+  ],
 };
 
 export default sidebars;
