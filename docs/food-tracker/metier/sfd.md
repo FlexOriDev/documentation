@@ -13,10 +13,8 @@
 2. [Description générale du système](#2-description-générale-du-système)
 3. [Fonctionnalités détaillées](#3-fonctionnalités-détaillées)
 4. [Règles de gestion transverses](#4-règles-de-gestion-transverses)
-5. [Interface utilisateur (UI/UX)](#5-interface-utilisateur-uiux)
-6. [Contraintes](#6-contraintes)
-7. [Glossaire](#7-glossaire)
-8. [Annexes](#8-annexes)
+5. [Navbar, Header et menuing utilisateur (UI/UX)](#5-navbar-header-et-menuing-utilisateur)
+6. [Glossaire](#6-glossaire)
 
 ---
 
@@ -69,16 +67,16 @@ Sportifs, personnes voulant faire un régime ...
 
 ### 3.1 Page Création de repas
 
-- **Objectif :**  
+- **🔰 Objectif :**  
   
   1. Consulter une banque d’aliments 
   2. Créer/modifier un aliment (nom, macros, portion)
   3. Composer des repas à partir d’aliments
   4. Sauvegarder des repas réutilisables
 
-- **Pré-conditions :**
+- **🔰 Pré-conditions :**
     - L'utilisateur doit être enregistré
-- **Tests d'acceptance :**
+- **🔰 Tests d'acceptance :**
 - Je peux :
   - choisir si je veux ajouter un repas ou un aliment.
   - ajouter des aliments dans mon assiette
@@ -89,52 +87,44 @@ Sportifs, personnes voulant faire un régime ...
   - changer le nom de mon aliment
   - utiliser mon aliment dans le mode Repas et l'ajouter dans mon assiette
 
-- **Maquettes d’écran :**  
+- **🔰 Maquette d’écran :**  
   ![Maquette](/img/foodTracker/ecran/crafter.JPG)
+- **🔰 Modification d'un aliment**
+
+  **Workflow ➡️ [RG 001](#rg001), [RG 002](#rg002)**
+
+  Lorsqu'on appui sur le bouton d'édition d'une des lignes de la colonne d'aliments (entouré d'un cercle bleu dans l'image ci-dessous),
+alors une popup d'édition s'ouvre.
+
+  ![Maquette](/img/foodTracker/ecran/action_popup_modification.JPG)
+
+  On peut dans cette popup, modifier toutes les valeurs de l'aliment en question. Cela permet à l'utilisateur de gérer ses macros nutriments en fonction de ce qu'il peut consommer.
+
+  ![Maquette](/img/foodTracker/ecran/popup_modification.JPG)
 
 ---
 
 ### 3.2 Page Planning de repas 
 
-- **Objectif :**
+- **🔰 Objectif :**
 
   1. Calendrier hebdomadaire
   2. Assignation de repas à un jour / moment (petit-déjeuner, déjeuner, dîner)
   3. Modification a posteriori : portion, repas remplacé
 
-- **Entrées :**
-
-
-- **Traitements :**
-  - Vérification des identifiants
-  - Génération de session
-
-- **Sorties :**
-  - Redirection vers tableau de bord
-  - Message d’erreur en cas d’échec
-
-- **Pré-conditions :**
+- **🔰 Pré-conditions :**
   - L'utilisateur doit être enregistré
 
-- **Post-conditions :**
-  - Session active
+- **🔰 Tests d'acceptance :**
 
-- **Exceptions :**
-  - Erreur de mot de passe
-  - Utilisateur non trouvé
-
-- **Maquettes d’écran :**  
+- **🔰 Maquettes d’écran :**  
   ![Maquette](/img/logo.svg)
-
-- **Diagrammes (facultatif) :**
-  - Cas d’utilisation
-  - Séquence
 
 ---
 
 ### 3.3 Page Dashboard
 
-- **Objectif :**
+- **🔰 Objectif :**
 
   - Vue sur :
   - La semaine (repas consommés)
@@ -147,39 +137,19 @@ Sportifs, personnes voulant faire un régime ...
   - Objectif vs réel
   - Vue mois / année (filtrable)
 
-- **Entrées :**
-
-
-- **Traitements :**
-  - Vérification des identifiants
-  - Génération de session
-
-- **Sorties :**
-  - Redirection vers tableau de bord
-  - Message d’erreur en cas d’échec
-
-- **Pré-conditions :**
+- **🔰 Pré-conditions :**
   - L'utilisateur doit être enregistré
 
-- **Post-conditions :**
-  - Session active
+- **🔰 Tests d'acceptance :**
 
-- **Exceptions :**
-  - Erreur de mot de passe
-  - Utilisateur non trouvé
-
-- **Maquettes d’écran :**  
+- **🔰 Maquettes d’écran :**  
   ![Maquette](/img/logo.svg)
-
-- **Diagrammes (facultatif) :**
-  - Cas d’utilisation
-  - Séquence
 
 ---
 
 ### 3.4 Page Profil utilisateur
 
-- **Objectif :**
+- **🔰 Objectif :**
 
   - Nom, email, sexe, âge, poids, taille, niveau activité
  
@@ -189,39 +159,19 @@ Sportifs, personnes voulant faire un régime ...
  
   - Historique de poids
 
-- **Entrées :**
-
-
-- **Traitements :**
-  - Vérification des identifiants
-  - Génération de session
-
-- **Sorties :**
-  - Redirection vers tableau de bord
-  - Message d’erreur en cas d’échec
-
-- **Pré-conditions :**
+- **🔰 Pré-conditions :**
   - L'utilisateur doit être enregistré
 
-- **Post-conditions :**
-  - Session active
+- **🔰 Tests d'acceptance :**
 
-- **Exceptions :**
-  - Erreur de mot de passe
-  - Utilisateur non trouvé
-
-- **Maquettes d’écran :**  
+- **🔰 Maquettes d’écran :**  
   ![Maquette](/img/logo.svg)
-
-- **Diagrammes (facultatif) :**
-  - Cas d’utilisation
-  - Séquence
 
 ---
 
 ### 3.5 Page Authentification
 
-- **Objectif :**
+- **🔰 Objectif :**
 
   - Login, inscription
 
@@ -229,33 +179,13 @@ Sportifs, personnes voulant faire un régime ...
 
   - Sécurité token / sessions
 
-- **Entrées :**
-
-
-- **Traitements :**
-  - Vérification des identifiants
-  - Génération de session
-
-- **Sorties :**
-  - Redirection vers tableau de bord
-  - Message d’erreur en cas d’échec
-
-- **Pré-conditions :**
+- **🔰 Pré-conditions :**
   - L'utilisateur doit être enregistré
 
-- **Post-conditions :**
-  - Session active
+- **🔰 Tests d'acceptance :**
 
-- **Exceptions :**
-  - Erreur de mot de passe
-  - Utilisateur non trouvé
-
-- **Maquettes d’écran :**  
+- **🔰 Maquettes d’écran :**  
   ![Maquette](/img/logo.svg)
-
-- **Diagrammes (facultatif) :**
-  - Cas d’utilisation
-  - Séquence
 
 ---
 
@@ -265,12 +195,16 @@ Sportifs, personnes voulant faire un régime ...
 
 ## 4. Règles de gestion transverses
 
-- Règle RG01 : [ex : un utilisateur ne peut pas réserver deux fois le même créneau]
-- Règle RG02 : [ex : la date de livraison ne peut être antérieure à la date de commande]
+📋 **Création de repas**
+
+| <a name="rg001"></a>Règle     | Objectif                                                                                                                                                                                                                                                                                                       | Ecran                                                             |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| <a name="rg002"></a>**RG001** | **Bouton d'édition d'un aliment**  <br/>Cliquer sur le bouton d'édition d'un aliment représentant un encart de la liste des aliments permet d'ouvrir la popup ([RG002](#rg002)) d'édition des métriques d'un aliment.                                                                                          | ![Maquette](/img/foodTracker/ecran/action_popup_modification.JPG) |
+| <a name="rg003"></a>**RG002** | **Popup d'édition des métriques d'un aliment**  <br/>La popup d'édition des métriques d'un aliment permet de modifier toutes les valeurs nutritives de cet aliment. Cela permet à l'utilisateur d'avoir une gestion beaucoup plus fine sur sa consommation en glucides, calories, proteines, vitamines etc ... | ![Maquette](/img/foodTracker/ecran/popup_modification.JPG)        |
 
 ---
 
-## 5. Interface utilisateur (UI/UX)
+## 5. Navbar, Header et menuing utilisateur
 
 - **Principes de navigation :**  
   [Ex : menu fixe, navigation par onglet…]
@@ -280,33 +214,13 @@ Sportifs, personnes voulant faire un régime ...
 
 ---
 
-## 6. Contraintes
-
-- **Performance :**
-    - Temps de réponse < 2s
-
-- **Compatibilité :**
-    - Navigateurs : Chrome, Firefox, Edge
-
-- **Accessibilité :**
-    - Conforme RGAA niveau AA
-
----
-
-## 7. Glossaire
+## 6. Glossaire
 
 | Terme          | Définition                                    |
 |----------------|-----------------------------------------------|
 | API            | Interface de Programmation d’Application      |
-| RGAA           | Référentiel Général d'Amélioration de l'Accessibilité |
+|            |  |
 
 ---
 
-## 8. Annexes
-
-- Données de test
-- Spécifications techniques associées
-- Liste des endpoints API
-
----
 
