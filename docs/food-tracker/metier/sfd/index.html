@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Spécifications Fonctionnelles Détaillées (SFD) | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://flexoridev.github.io/documentation/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://flexoridev.github.io/documentation/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://flexoridev.github.io/documentation/docs/food-tracker/metier/sfd"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Spécifications Fonctionnelles Détaillées (SFD) | My Site"><meta data-rh="true" name="description" content="Projet : FoodTracker"><meta data-rh="true" property="og:description" content="Projet : FoodTracker"><link data-rh="true" rel="icon" href="/documentation/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://flexoridev.github.io/documentation/docs/food-tracker/metier/sfd"><link data-rh="true" rel="alternate" href="https://flexoridev.github.io/documentation/docs/food-tracker/metier/sfd" hreflang="en"><link data-rh="true" rel="alternate" href="https://flexoridev.github.io/documentation/docs/food-tracker/metier/sfd" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/documentation/blog/rss.xml" title="My Site RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/documentation/blog/atom.xml" title="My Site Atom Feed"><link rel="stylesheet" href="/documentation/assets/css/styles.1724a0b2.css">
-<script src="/documentation/assets/js/runtime~main.c9aa1be0.js" defer="defer"></script>
+<script src="/documentation/assets/js/runtime~main.a4d99ebd.js" defer="defer"></script>
 <script src="/documentation/assets/js/main.34fd83a4.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -27,11 +27,19 @@
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
 <ol>
-<li><a href="#31-page-cr%C3%A9ation-de-repas">Création de repas</a></li>
-<li><a href="#32-page-planning-de-repas">Planning de repas</a></li>
-<li><a href="#33-page-dashboard">Dashboard</a></li>
-<li><a href="#34-page-profil-utilisateur">Profil Utilisateur</a></li>
-<li><a href="#35-page-authentification">Authentification</a></li>
+<li><a href="#31-creation-de-compte">Creation de compte</a></li>
+<li><a href="#31-creation-de-compte">Authentification / Login</a></li>
+<li><a href="#31-creation-de-compte">Vitrine : Header</a></li>
+<li><a href="#31-creation-de-compte">Vitrine : Accueil</a></li>
+<li><a href="#31-creation-de-compte">Saas : Header</a></li>
+<li><a href="#31-creation-de-compte">Saas : Sidebar</a></li>
+<li><a href="#31-creation-de-compte">Saas : Mon Profil</a></li>
+<li><a href="#31-creation-de-compte">Saas : Paramètres</a></li>
+<li><a href="#35-page-cr%C3%A9ation-de-repas">Création de repas</a></li>
+<li><a href="#36-page-planning-de-repas">Planning de repas</a></li>
+<li><a href="#37-page-dashboard">Dashboard</a></li>
+<li><a href="#38-page-profil-utilisateur">Profil Utilisateur</a></li>
+<li><a href="#39-page-authentification">Authentification</a></li>
 </ol>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-introduction">1. Introduction<a href="#1-introduction" class="hash-link" aria-label="Direct link to 1. Introduction" title="Direct link to 1. Introduction">​</a></h2>
@@ -72,6 +80,48 @@ Sportifs, personnes voulant faire un régime ...</p>
 </ul>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-fonctionnalités-détaillées">3. Fonctionnalités détaillées<a href="#3-fonctionnalités-détaillées" class="hash-link" aria-label="Direct link to 3. Fonctionnalités détaillées" title="Direct link to 3. Fonctionnalités détaillées">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-création-de-compte">3.1 Création de compte<a href="#31-création-de-compte" class="hash-link" aria-label="Direct link to 3.1 Création de compte" title="Direct link to 3.1 Création de compte">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="311-steps-">3.1.1 Steps :<a href="#311-steps-" class="hash-link" aria-label="Direct link to 3.1.1 Steps :" title="Direct link to 3.1.1 Steps :">​</a></h2>
+<p>Pour la création d&#x27;un compte utilisateur, on doit passer par 5 étapes.</p>
+<p>La première étape est obligatoire, elle regroupe les informations d&#x27;identité permettant la création d&#x27;un compte utilisateur.</p>
+<p>Les autres étapes sont falcultative. Elles peuvent ne pas être remplies.</p>
+<p><strong>Etapes :</strong></p>
+<ol>
+<li>Identité</li>
+<li>Personnel</li>
+<li>Santé</li>
+<li>Photo</li>
+</ol>
+<p>La dernière étape est une étape de récap. Elle permet de faire la synthèse de toutes les informations saisies par l&#x27;utilisateur.</p>
+<ol start="5">
+<li>Recap</li>
+</ol>
+<p>Lors de cette dernière étape, si l&#x27;utilisateur a oublié de remplir des champs obligatoires, alors ces champs sont surlignés en rouge et le bouton &quot;Créer son compte&quot; est bloqué.</p>
+<p><strong>Gestion d&#x27;erreurs :</strong></p>
+<p>Si l&#x27;utilisateur a rempli tous les champs obligatoire, alors le bouton est en vert et est cliquable.</p>
+<p>Une icone de croix rouge / check mark verte est présente dépendamment de l&#x27;état des champs obligatoire, si ils sont remplis dans la totalité ou non.</p>
+<p><strong>STEPS EN IMAGE :</strong></p>
+<p><img decoding="async" loading="lazy" alt="img_6.png" src="/documentation/assets/images/img_6-ec2e6a69c53ce6fc66d04a4b84fc8292.png" width="878" height="1067" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="img_7.png" src="/documentation/assets/images/img_7-847b1fc7de6814205a581d9662013579.png" width="859" height="940" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="img_8.png" src="/documentation/assets/images/img_8-8e475782a2c15d1180d04d40b078b99e.png" width="858" height="711" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="img_9.png" src="/documentation/assets/images/img_9-573ae5f7bcfe68f87311acfcaab46a59.png" width="836" height="581" class="img_ev3q"></p>
+<p><strong>Cas d&#x27;erreur de l&#x27;étape Recap :</strong></p>
+<p><img decoding="async" loading="lazy" alt="img_10.png" src="/documentation/assets/images/img_10-8d17ecd4921fde54ebf77fa0991edd67.png" width="721" height="1112" class="img_ev3q"></p>
+<p><strong>Cas de succès de l&#x27;étape Recap :</strong></p>
+<p><img decoding="async" loading="lazy" alt="img_11.png" src="/documentation/assets/images/img_11-bc7f86c9c6e771079ffd9c31ff389dd4.png" width="698" height="1106" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="312-activation-du-compte-">3.1.2 Activation du compte :<a href="#312-activation-du-compte-" class="hash-link" aria-label="Direct link to 3.1.2 Activation du compte :" title="Direct link to 3.1.2 Activation du compte :">​</a></h2>
+<p>Quand on créer son compte (quand on appuie sur le bouton <em>&quot;Créer son compte&quot;</em> à l&#x27;issue des étapes), le compte doit être activé. Cela permet de renforcer la sécurité. On obtient donc cette page :</p>
+<p><img decoding="async" loading="lazy" alt="img.png" src="/documentation/assets/images/img-ecc82409a783b642735069f0e31d6d6d.png" width="830" height="599" class="img_ev3q"></p>
+<p><strong>SUCCES :</strong></p>
+<p>On clique sur le lien d&#x27;activation reçu par e-mail, le compte est bien activé :</p>
+<p><img decoding="async" loading="lazy" alt="img_4.png" src="/documentation/assets/images/img_4-1c28068d55145521fcd61dfefa973c1c.png" width="775" height="411" class="img_ev3q"></p>
+<p><strong>ECHEC : Cas nominal :</strong></p>
+<p>Le lien d&#x27;activation a expiré (10 minutes).</p>
+<p><img decoding="async" loading="lazy" alt="img_1.png" src="/documentation/assets/images/img_1-6494ba3736cafbe63f16ff70eb06b937.png" width="763" height="498" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="img_2.png" src="/documentation/assets/images/img_2-92fc0ec12b2144915346cdf807d57e56.png" width="726" height="453" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="img_3.png" src="/documentation/assets/images/img_3-5d12ad5817da99a7d88e64fcfbb3fe1e.png" width="734" height="387" class="img_ev3q"></p>
+<p><strong>ECHEC : Cas compte déjà activé :</strong></p>
+<p><img decoding="async" loading="lazy" alt="img_5.png" src="/documentation/assets/images/img_5-d388143f0d78874287a83efd95ce3254.png" width="790" height="424" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-page-création-de-repas">3.1 Page Création de repas<a href="#31-page-création-de-repas" class="hash-link" aria-label="Direct link to 3.1 Page Création de repas" title="Direct link to 3.1 Page Création de repas">​</a></h3>
 <ul>
 <li>
@@ -265,6 +315,6 @@ alors une popup d&#x27;édition s&#x27;ouvre.</p>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-glossaire">6. Glossaire<a href="#6-glossaire" class="hash-link" aria-label="Direct link to 6. Glossaire" title="Direct link to 6. Glossaire">​</a></h2>
 <table><thead><tr><th>Terme</th><th>Définition</th></tr></thead><tbody><tr><td>API</td><td>Interface de Programmation d’Application</td></tr><tr><td></td><td></td></tr></tbody></table>
-<hr></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/food-tracker/metier/sfd.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/documentation/docs/food-tracker/intro"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">FoodTracker</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/documentation/docs/food-tracker/technique/dat"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Dossier d’Architecture Technique (DAT)</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#projet--foodtracker" class="table-of-contents__link toc-highlight">Projet : FoodTracker</a></li><li><a href="#table-des-matières" class="table-of-contents__link toc-highlight">Table des matières</a></li><li><a href="#features" class="table-of-contents__link toc-highlight">Features</a></li><li><a href="#1-introduction" class="table-of-contents__link toc-highlight">1. Introduction</a></li><li><a href="#2-description-générale-du-système" class="table-of-contents__link toc-highlight">2. Description générale du système</a></li><li><a href="#3-fonctionnalités-détaillées" class="table-of-contents__link toc-highlight">3. Fonctionnalités détaillées</a><ul><li><a href="#31-page-création-de-repas" class="table-of-contents__link toc-highlight">3.1 Page Création de repas</a></li><li><a href="#32-page-planning-de-repas" class="table-of-contents__link toc-highlight">3.2 Page Planning de repas</a></li><li><a href="#33-page-dashboard" class="table-of-contents__link toc-highlight">3.3 Page Dashboard</a></li><li><a href="#34-page-profil-utilisateur" class="table-of-contents__link toc-highlight">3.4 Page Profil utilisateur</a></li><li><a href="#35-page-authentification" class="table-of-contents__link toc-highlight">3.5 Page Authentification</a></li></ul></li><li><a href="#4-règles-de-gestion-transverses" class="table-of-contents__link toc-highlight">4. Règles de gestion transverses</a></li><li><a href="#5-navbar-header-et-menuing-utilisateur" class="table-of-contents__link toc-highlight">5. Navbar, Header et menuing utilisateur</a></li><li><a href="#6-glossaire" class="table-of-contents__link toc-highlight">6. Glossaire</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/documentation/docs/tutorial/intro">Tutorial</a></li><li class="footer__item"><a class="footer__link-item" href="/documentation/docs/food-tracker/intro">FoodTracker</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+<hr></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/food-tracker/metier/sfd.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/documentation/docs/food-tracker/intro"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">FoodTracker</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/documentation/docs/food-tracker/technique/dat"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Dossier d’Architecture Technique (DAT)</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#projet--foodtracker" class="table-of-contents__link toc-highlight">Projet : FoodTracker</a></li><li><a href="#table-des-matières" class="table-of-contents__link toc-highlight">Table des matières</a></li><li><a href="#features" class="table-of-contents__link toc-highlight">Features</a></li><li><a href="#1-introduction" class="table-of-contents__link toc-highlight">1. Introduction</a></li><li><a href="#2-description-générale-du-système" class="table-of-contents__link toc-highlight">2. Description générale du système</a></li><li><a href="#3-fonctionnalités-détaillées" class="table-of-contents__link toc-highlight">3. Fonctionnalités détaillées</a><ul><li><a href="#31-création-de-compte" class="table-of-contents__link toc-highlight">3.1 Création de compte</a></li></ul></li><li><a href="#311-steps-" class="table-of-contents__link toc-highlight">3.1.1 Steps :</a></li><li><a href="#312-activation-du-compte-" class="table-of-contents__link toc-highlight">3.1.2 Activation du compte :</a><ul><li><a href="#31-page-création-de-repas" class="table-of-contents__link toc-highlight">3.1 Page Création de repas</a></li><li><a href="#32-page-planning-de-repas" class="table-of-contents__link toc-highlight">3.2 Page Planning de repas</a></li><li><a href="#33-page-dashboard" class="table-of-contents__link toc-highlight">3.3 Page Dashboard</a></li><li><a href="#34-page-profil-utilisateur" class="table-of-contents__link toc-highlight">3.4 Page Profil utilisateur</a></li><li><a href="#35-page-authentification" class="table-of-contents__link toc-highlight">3.5 Page Authentification</a></li></ul></li><li><a href="#4-règles-de-gestion-transverses" class="table-of-contents__link toc-highlight">4. Règles de gestion transverses</a></li><li><a href="#5-navbar-header-et-menuing-utilisateur" class="table-of-contents__link toc-highlight">5. Navbar, Header et menuing utilisateur</a></li><li><a href="#6-glossaire" class="table-of-contents__link toc-highlight">6. Glossaire</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/documentation/docs/tutorial/intro">Tutorial</a></li><li class="footer__item"><a class="footer__link-item" href="/documentation/docs/food-tracker/intro">FoodTracker</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
