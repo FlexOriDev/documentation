@@ -20,11 +20,19 @@
 
 ## Features
 
-1. [Création de repas](#31-page-création-de-repas)
-2. [Planning de repas](#32-page-planning-de-repas)
-3. [Dashboard](#33-page-dashboard)
-4. [Profil Utilisateur](#34-page-profil-utilisateur)
-5. [Authentification](#35-page-authentification)
+1. [Creation de compte](#31-creation-de-compte)
+2. [Authentification / Login](#31-creation-de-compte)
+3. [Vitrine : Header](#31-creation-de-compte)
+4. [Vitrine : Accueil](#31-creation-de-compte)
+5. [Saas : Header](#31-creation-de-compte)
+6. [Saas : Sidebar](#31-creation-de-compte)
+7. [Saas : Mon Profil](#31-creation-de-compte)
+1. [Saas : Paramètres](#31-creation-de-compte)
+1. [Création de repas](#35-page-création-de-repas)
+2. [Planning de repas](#36-page-planning-de-repas)
+3. [Dashboard](#37-page-dashboard)
+4. [Profil Utilisateur](#38-page-profil-utilisateur)
+5. [Authentification](#39-page-authentification)
 
 ---
 
@@ -64,6 +72,79 @@ Sportifs, personnes voulant faire un régime ...
 ---
 
 ## 3. Fonctionnalités détaillées
+
+### 3.1 Création de compte 
+
+## 3.1.1 Steps :
+
+Pour la création d'un compte utilisateur, on doit passer par 5 étapes. 
+
+La première étape est obligatoire, elle regroupe les informations d'identité permettant la création d'un compte utilisateur.
+
+Les autres étapes sont falcultative. Elles peuvent ne pas être remplies.
+
+**Etapes :**
+
+1. Identité
+2. Personnel
+3. Santé
+4. Photo
+
+La dernière étape est une étape de récap. Elle permet de faire la synthèse de toutes les informations saisies par l'utilisateur.
+
+5. Recap
+
+Lors de cette dernière étape, si l'utilisateur a oublié de remplir des champs obligatoires, alors ces champs sont surlignés en rouge et le bouton "Créer son compte" est bloqué.
+
+**Gestion d'erreurs :**
+
+Si l'utilisateur a rempli tous les champs obligatoire, alors le bouton est en vert et est cliquable.
+
+Une icone de croix rouge / check mark verte est présente dépendamment de l'état des champs obligatoire, si ils sont remplis dans la totalité ou non.
+
+**STEPS EN IMAGE :**
+
+![img_6.png](img_6.png)
+
+![img_7.png](img_7.png)
+
+![img_8.png](img_8.png)
+
+![img_9.png](img_9.png)
+
+**Cas d'erreur de l'étape Recap :**
+
+![img_10.png](img_10.png)
+
+**Cas de succès de l'étape Recap :**
+
+![img_11.png](img_11.png)
+
+## 3.1.2 Activation du compte :
+
+Quand on créer son compte (quand on appuie sur le bouton *"Créer son compte"* à l'issue des étapes), le compte doit être activé. Cela permet de renforcer la sécurité. On obtient donc cette page :
+
+![img.png](img.png)
+
+**SUCCES :**
+
+On clique sur le lien d'activation reçu par e-mail, le compte est bien activé :
+
+![img_4.png](img_4.png)
+
+**ECHEC : Cas nominal :**
+
+Le lien d'activation a expiré (10 minutes).
+
+![img_1.png](img_1.png)
+
+![img_2.png](img_2.png)
+
+![img_3.png](img_3.png)
+
+**ECHEC : Cas compte déjà activé :**
+
+![img_5.png](img_5.png)
 
 ### 3.1 Page Création de repas
 
